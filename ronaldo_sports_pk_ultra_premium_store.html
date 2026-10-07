@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronaldo Sports PK | Official CR7 Premium Football & Athletic Gear</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#FFE885',
+                            400: '#FFD700',
+                            500: '#EAB308',
+                            600: '#D4AF37',
+                            700: '#A17D1A',
+                        },
+                        obsidian: '#0B0E14',
+                        darkNavy: '#131722',
+                        cardDark: '#1A202C',
+                        accentEmerald: '#10B981'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['Teko', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0B0E14;
+            color: #F3F4F6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF5C0 0%, #FFD700 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+        }
+
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .glass-panel {
+            background: rgba(19, 23, 34, 0.85);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: rgba(26, 32, 44, 0.75);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.12);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(255, 215, 0, 0.25);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0E14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A324B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFD700;
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            50% { box-shadow: 0 0 0 18px rgba(34, 197, 94, 0); }
+        }
+        .whatsapp-pulse {
+            animation: pulse-whatsapp 2s infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-400 selection:text-black">
+
+    <div class="bg-gradient-to-r from-gold-600 via-amber-400 to-gold-600 text-black font-extrabold text-xs sm:text-sm py-2 px-4 text-center tracking-wider uppercase flex items-center justify-center space-x-2 shadow-lg">
+        <i class="fa-solid fa-bolt animate-bounce"></i>
+        <span>CR7 Special Discount Week! Express Cash on Delivery across Pakistan</span>
+        <span class="hidden md:inline">| Order via WhatsApp:</span>
+        <a href="https://wa.me/923405049439" target="_blank" class="underline font-black hover:text-white transition">03405049439</a>
+    </div>
+
+    <header class="sticky top-0 z-40 glass-panel border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="filterCategory('all')">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-gold-600 via-yellow-400 to-gold-300 rounded-xl flex items-center justify-center shadow-lg shadow-gold-500/20 border border-yellow-200">
+                        <span class="font-display text-3xl font-black text-black tracking-tighter">CR7</span>
+                    </div>
+                    <div>
+                        <span class="font-display text-2xl sm:text-3xl font-extrabold tracking-wider gold-gradient-text block leading-none">RONALDO SPORTS</span>
+                        <span class="text-[10px] text-gray-400 tracking-widest uppercase block -mt-0.5 font-bold">Pakistan's #1 Athletics Store</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-md mx-8 relative">
+                    <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search Ronaldo Jerseys, Cleats, Tracksuits..." 
+                        class="w-full bg-darkNavy text-sm text-gray-200 rounded-full pl-10 pr-4 py-2.5 border border-gray-700/80 focus:outline-none focus:border-gold-400 transition shadow-inner">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-gray-400 text-sm"></i>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-xl bg-darkNavy hover:bg-gray-800 text-gold-400 transition border border-gray-700/80">
+                        <i class="fa-solid fa-bag-shopping text-xl"></i>
+                        <span id="cartCountBadge" class="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center border-2 border-obsidian">0</span>
+                    </button>
+                    
+                    <a href="https://wa.me/923405049439" target="_blank" class="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-extrabold px-4 py-2.5 rounded-xl text-xs transition shadow-lg shadow-green-600/30">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp: 03405049439</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Mobile Search Bar -->
+            <div class="md:hidden pb-3">
+                <div class="relative">
+                    <input type="text" id="mobileSearchInput" oninput="handleMobileSearch()" placeholder="Search jerseys, shoes, gear..." 
+                        class="w-full bg-darkNavy text-sm text-gray-200 rounded-xl pl-10 pr-4 py-2 border border-gray-700/80 focus:outline-none focus:border-gold-400">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-gradient-to-b from-darkNavy via-obsidian to-obsidian py-10 lg:py-16 border-b border-gray-800/80 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#FFD700_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    
+                    <div class="inline-flex items-center space-x-2 bg-gold-400/10 border border-gold-400/30 rounded-full px-4 py-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-ping"></span>
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-widest">CR7 Champions Edition 2026</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none text-white">
+                        PLAY LIKE A <span class="gold-gradient-text uppercase font-display text-5xl sm:text-7xl">LEGEND</span> <br>
+                        MASTER THE PITCH
+                    </h1>
+
+                    <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Discover Pakistan's finest collection of official quality Football Kits, CR7 Edition Jerseys, Turf Shoes, and Training Tracksuits with direct WhatsApp ordering.
+                    </p>
+
+                    <!-- Flash Sale Timer -->
+                    <div class="glass-card p-4 rounded-2xl max-w-md mx-auto lg:mx-0 gold-border-glow">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-gold-400 uppercase tracking-wider"><i class="fa-solid fa-fire mr-1"></i> Flash Sale Ending In:</span>
+                            <span class="text-[10px] bg-red-500/20 text-red-400 px-2 py-0.5 rounded font-bold uppercase">Limited Stock</span>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 text-center" id="countdownTimer">
+                            <div class="bg-darkNavy p-2 rounded-lg border border-gray-700">
+                                <span id="hours" class="text-xl font-extrabold text-white block">08</span>
+                                <span class="text-[9px] text-gray-400 uppercase">Hours</span>
+                            </div>
+                            <div class="bg-darkNavy p-2 rounded-lg border border-gray-700">
+                                <span id="minutes" class="text-xl font-extrabold text-white block">42</span>
+                                <span class="text-[9px] text-gray-400 uppercase">Mins</span>
+                            </div>
+                            <div class="bg-darkNavy p-2 rounded-lg border border-gray-700">
+                                <span id="seconds" class="text-xl font-extrabold text-white block">19</span>
+                                <span class="text-[9px] text-gray-400 uppercase">Secs</span>
+                            </div>
+                            <div class="bg-darkNavy p-2 rounded-lg border border-gray-700">
+                                <span class="text-xl font-extrabold text-gold-400 block">-30%</span>
+                                <span class="text-[9px] text-gray-400 uppercase">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#productsSection" class="bg-gradient-to-r from-gold-400 to-gold-600 hover:from-gold-300 hover:to-gold-500 text-black font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-gold-500/20 text-center uppercase tracking-wider transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-cart-shopping mr-2"></i> Explore Store
+                        </a>
+                        <a href="https://wa.me/923405049439?text=Hello%20Ronaldo%20Sports%20PK!%20I%20want%20to%20inquire%20about%20kits." target="_blank" class="bg-darkNavy hover:bg-gray-800 border border-gray-700 text-white font-bold px-8 py-4 rounded-xl text-center uppercase tracking-wider transition flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                            <span>Quick WhatsApp Inquiry</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden gold-border-glow shadow-2xl bg-darkNavy group">
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=900&q=80" alt="CR7 Sports Kit" class="w-full h-80 sm:h-96 object-cover object-center transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-[10px] text-gold-400 font-extrabold uppercase tracking-widest">Top Selling Kit</span>
+                                    <h3 class="text-white font-bold text-sm">Portugal CR7 Special Home Kit 2026</h3>
+                                </div>
+                                <span class="bg-gold-400 text-black text-xs font-extrabold px-3 py-1 rounded-full">Rs. 2,499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-6 bg-darkNavy/50 border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-3 glass-panel rounded-xl flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-truck-fast text-gold-400 text-2xl"></i>
+                    <div class="text-left">
+                        <p class="text-xs font-bold text-white uppercase">Express Delivery</p>
+                        <p class="text-[10px] text-gray-400">All across Pakistan</p>
+                    </div>
+                </div>
+                <div class="p-3 glass-panel rounded-xl flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-shield-halved text-gold-400 text-2xl"></i>
+                    <div class="text-left">
+                        <p class="text-xs font-bold text-white uppercase">Master Quality</p>
+                        <p class="text-[10px] text-gray-400">100% Premium Fabric</p>
+                    </div>
+                </div>
+                <div class="p-3 glass-panel rounded-xl flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-hand-holding-dollar text-gold-400 text-2xl"></i>
+                    <div class="text-left">
+                        <p class="text-xs font-bold text-white uppercase">Cash on Delivery</p>
+                        <p class="text-[10px] text-gray-400">Pay at your doorstep</p>
+                    </div>
+                </div>
+                <div class="p-3 glass-panel rounded-xl flex items-center justify-center space-x-3">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-2xl"></i>
+                    <div class="text-left">
+                        <p class="text-xs font-bold text-white uppercase">Direct Support</p>
+                        <p class="text-[10px] text-gray-400">03405049439 Assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-6 bg-obsidian sticky top-20 z-30 glass-panel border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-3 overflow-x-auto pb-1 scrollbar-none" id="categoryButtons">
+                <button onclick="filterCategory('all')" class="cat-btn active bg-gold-400 text-black font-extrabold px-6 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap shadow-md transition">
+                    <i class="fa-solid fa-border-all mr-1.5"></i> All Gear
+                </button>
+                <button onclick="filterCategory('jerseys')" class="cat-btn bg-darkNavy hover:bg-gray-800 text-gray-300 font-semibold px-6 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap border border-gray-700/80 transition">
+                    <i class="fa-solid fa-shirt mr-1.5"></i> Football Kits & Jerseys
+                </button>
+                <button onclick="filterCategory('shoes')" class="cat-btn bg-darkNavy hover:bg-gray-800 text-gray-300 font-semibold px-6 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap border border-gray-700/80 transition">
+                    <i class="fa-solid fa-shoe-prints mr-1.5"></i> Turf Boots & Shoes
+                </button>
+                <button onclick="filterCategory('cr7specials')" class="cat-btn bg-darkNavy hover:bg-gray-800 text-gray-300 font-semibold px-6 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap border border-gray-700/80 transition">
+                    <i class="fa-solid fa-crown text-gold-400 mr-1.5"></i> CR7 Special Edition
+                </button>
+                <button onclick="filterCategory('tracksuits')" class="cat-btn bg-darkNavy hover:bg-gray-800 text-gray-300 font-semibold px-6 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap border border-gray-700/80 transition">
+                    <i class="fa-solid fa-user-ninja mr-1.5"></i> Tracksuits & Gym Wear
+                </button>
+                <button onclick="filterCategory('accessories')" class="cat-btn bg-darkNavy hover:bg-gray-800 text-gray-300 font-semibold px-6 py-2.5 rounded-xl text-xs sm:text-sm whitespace-nowrap border border-gray-700/80 transition">
+                    <i class="fa-solid fa-football mr-1.5"></i> Accessories & Balls
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="productsSection" class="py-12 bg-obsidian min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-wide">
+                        FEATURED <span class="gold-gradient-text">COLLECTION</span>
+                    </h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-1">Select your item, customize size and buy instantly via WhatsApp</p>
+                </div>
+                <div class="text-xs text-gray-400">
+                    Showing <span id="productCount" class="text-gold-400 font-bold">0</span> Items
+                </div>
+            </div>
+
+            <!-- Product Cards Container -->
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Javascript will render dynamic product cards here -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden text-center py-20">
+                <i class="fa-solid fa-magnifying-glass text-5xl text-gray-600 mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-300">No Matching Gear Found</h3>
+                <p class="text-gray-500 text-sm mt-1">Try searching for "CR7", "Jersey", or "Boots"</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-12 bg-darkNavy border-t border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Verified Feedback</span>
+                <h2 class="text-3xl font-extrabold text-white">WHAT OUR ATHLETES SAY</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center space-x-1 text-gold-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm italic leading-relaxed mb-4">"The Portugal CR7 kit quality is outstanding! Printing and material are 10/10. Delivered in Lahore within 2 days."</p>
+                    <div class="flex items-center space-x-3 border-t border-gray-800 pt-3">
+                        <div class="w-9 h-9 rounded-full bg-gold-400 text-black font-bold flex items-center justify-center text-xs">AH</div>
+                        <div>
+                            <p class="text-white font-bold text-xs">Ali Hassan</p>
+                            <p class="text-gray-500 text-[10px]">Lahore - Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center space-x-1 text-gold-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm italic leading-relaxed mb-4">"Direct WhatsApp order process with 03405049439 was super smooth. Received my turf shoes safely in Rawalpindi."</p>
+                    <div class="flex items-center space-x-3 border-t border-gray-800 pt-3">
+                        <div class="w-9 h-9 rounded-full bg-gold-400 text-black font-bold flex items-center justify-center text-xs">UM</div>
+                        <div>
+                            <p class="text-white font-bold text-xs">Usman Malik</p>
+                            <p class="text-gray-500 text-[10px]">Rawalpindi - Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center space-x-1 text-gold-400 mb-3 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm italic leading-relaxed mb-4">"Best store for sports lovers in Pakistan. The tracksuit fitting and fabric feel super premium!"</p>
+                    <div class="flex items-center space-x-3 border-t border-gray-800 pt-3">
+                        <div class="w-9 h-9 rounded-full bg-gold-400 text-black font-bold flex items-center justify-center text-xs">FK</div>
+                        <div>
+                            <p class="text-white font-bold text-xs">Fawad Khan</p>
+                            <p class="text-gray-500 text-[10px]">Karachi - Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity" onclick="toggleCartDrawer()"></div>
+
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-darkNavy border-l border-gray-800 text-gray-200 flex flex-col justify-between shadow-2xl">
+                
+                <!-- Drawer Header -->
+                <div class="p-5 border-b border-gray-800 flex justify-between items-center bg-obsidian">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-bag-shopping text-gold-400 text-xl"></i>
+                        <h3 class="text-lg font-extrabold text-white tracking-wide">YOUR CART</h3>
+                    </div>
+                    <button onclick="toggleCartDrawer()" class="text-gray-400 hover:text-white p-2">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Drawer Body -->
+                <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-5 space-y-4">
+                    <!-- Items rendered dynamically -->
+                </div>
+
+                <!-- Drawer Footer -->
+                <div class="p-5 border-t border-gray-800 bg-obsidian space-y-4">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-400">Total Amount:</span>
+                        <span id="cartSubtotal" class="text-2xl font-extrabold text-gold-400">Rs. 0</span>
+                    </div>
+                    <div class="text-xs text-gray-400 flex items-center space-x-1">
+                        <i class="fa-solid fa-truck-fast text-green-400"></i>
+                        <span>Free Shipping across Pakistan on orders over Rs. 5,000</span>
+                    </div>
+                    <button onclick="openCheckoutModal()" class="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-extrabold py-3.5 rounded-xl uppercase tracking-wider text-xs shadow-lg shadow-green-600/30 transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Checkout via WhatsApp</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="productModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="absolute inset-0 bg-black/85 backdrop-blur-md" onclick="closeProductModal()"></div>
+        
+        <div class="relative bg-darkNavy rounded-2xl max-w-2xl w-full border border-gray-800 shadow-2xl overflow-hidden z-10">
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 z-20 text-gray-400 hover:text-white bg-gray-900/80 p-2 rounded-full">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="bg-black/60 flex items-center justify-center p-6">
+                    <img id="modalProductImage" src="" alt="Product" class="max-h-72 object-contain rounded-lg">
+                </div>
+                
+                <div class="p-6 space-y-4 flex flex-col justify-between">
+                    <div>
+                        <span id="modalProductCategory" class="text-[10px] uppercase font-bold tracking-widest text-gold-400 bg-gold-400/10 px-2.5 py-1 rounded-md">Category</span>
+                        <h3 id="modalProductName" class="text-xl font-extrabold text-white mt-2">Product Name</h3>
+                        <p id="modalProductPrice" class="text-2xl font-black text-gold-400 mt-1">Rs. 0</p>
+                        <p id="modalProductDesc" class="text-gray-400 text-xs mt-3 leading-relaxed">Description...</p>
+                        
+                        <!-- Size Selection -->
+                        <div class="mt-4">
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Select Size:</label>
+                            <div class="flex space-x-2" id="sizeOptions">
+                                <button onclick="selectSize('S')" class="size-btn px-3 py-1.5 border border-gray-700 text-xs font-bold rounded-lg text-gray-300 hover:border-gold-400">S</button>
+                                <button onclick="selectSize('M')" class="size-btn active px-3 py-1.5 border border-gold-400 text-xs font-bold rounded-lg text-gold-400 bg-gold-400/10">M</button>
+                                <button onclick="selectSize('L')" class="size-btn px-3 py-1.5 border border-gray-700 text-xs font-bold rounded-lg text-gray-300 hover:border-gold-400">L</button>
+                                <button onclick="selectSize('XL')" class="size-btn px-3 py-1.5 border border-gray-700 text-xs font-bold rounded-lg text-gray-300 hover:border-gold-400">XL</button>
+                                <button onclick="selectSize('XXL')" class="size-btn px-3 py-1.5 border border-gray-700 text-xs font-bold rounded-lg text-gray-300 hover:border-gold-400">XXL</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-4 border-t border-gray-800">
+                        <button onclick="addModalItemToCart()" class="w-full bg-gold-400 hover:bg-gold-300 text-black font-extrabold py-3 rounded-xl uppercase text-xs tracking-wider transition">
+                            <i class="fa-solid fa-cart-plus mr-1"></i> Add To Cart
+                        </button>
+                        <button onclick="directWhatsAppModalOrder()" class="w-full bg-green-600 hover:bg-green-500 text-white font-extrabold py-3 rounded-xl uppercase text-xs tracking-wider transition flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Direct WhatsApp Buy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkoutModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="absolute inset-0 bg-black/85 backdrop-blur-md" onclick="closeCheckoutModal()"></div>
+
+        <div class="relative bg-darkNavy rounded-2xl max-w-lg w-full border border-gray-800 shadow-2xl p-6 z-10">
+            <div class="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-2xl"></i>
+                    <h3 class="text-lg font-extrabold text-white">COMPLETE YOUR ORDER</h3>
+                </div>
+                <button onclick="closeCheckoutModal()" class="text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <form id="checkoutForm" onsubmit="submitWhatsAppOrder(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">Full Name *</label>
+                    <input type="text" id="custName" required placeholder="e.g. Fawad Ali" 
+                        class="w-full bg-obsidian border border-gray-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">Phone / WhatsApp Number *</label>
+                    <input type="tel" id="custPhone" required placeholder="e.g. 03001234567" 
+                        class="w-full bg-obsidian border border-gray-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">City *</label>
+                    <input type="text" id="custCity" required placeholder="e.g. Rawalpindi / Islamabad / Lahore" 
+                        class="w-full bg-obsidian border border-gray-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">Complete Delivery Address *</label>
+                    <textarea id="custAddress" required rows="2" placeholder="House/Street No., Sector/Area..." 
+                        class="w-full bg-obsidian border border-gray-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-gold-400"></textarea>
+                </div>
+
+                <div class="p-3 bg-obsidian rounded-lg border border-gray-800 text-xs text-gray-400 flex items-center justify-between">
+                    <span>Payment Option:</span>
+                    <span class="font-extrabold text-gold-400">Cash on Delivery (COD)</span>
+                </div>
+
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white font-extrabold py-3.5 rounded-xl uppercase tracking-wider text-xs shadow-xl shadow-green-600/30 transition flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Send Order to WhatsApp (03405049439)</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/923405049439?text=Hello!%20I%20want%20to%20order%20from%20Ronaldo%20Sports%20PK." target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-40 whatsapp-pulse transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toastNotification" class="fixed top-24 right-4 z-50 bg-gold-400 text-black px-5 py-3 rounded-xl font-bold shadow-2xl flex items-center space-x-2 transform translate-x-full transition-transform duration-300">
+        <i class="fa-solid fa-circle-check text-lg"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <footer class="bg-darkNavy border-t border-gray-800/80 pt-12 pb-8 text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center font-display font-bold text-black text-xl">CR7</div>
+                    <span class="font-display text-xl font-bold text-white tracking-wider">RONALDO SPORTS PK</span>
+                </div>
+                <p class="leading-relaxed">Pakistan's premier destination for CR7 official style kits, custom printing jerseys, boots, and workout gear.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Direct Contact</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i>
+                        <span class="text-gray-200 font-bold">03405049439</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-solid fa-location-dot text-gold-400 text-sm"></i>
+                        <span>Fast Delivery across Pakistan</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-solid fa-clock text-gray-500 text-sm"></i>
+                        <span>Store Hours: 10:00 AM - 11:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Customer Support</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gold-400">Size Chart Guide</a></li>
+                    <li><a href="#" class="hover:text-gold-400">Easy Exchange Guarantee</a></li>
+                    <li><a href="#" class="hover:text-gold-400">Cash on Delivery Terms</a></li>
+                    <li><a href="#" class="hover:text-gold-400">Custom Name Printing Info</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Connect With Us</h4>
+                <div class="flex space-x-3 text-lg">
+                    <a href="#" class="w-9 h-9 bg-obsidian rounded-full flex items-center justify-center hover:bg-gold-400 hover:text-black transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 bg-obsidian rounded-full flex items-center justify-center hover:bg-gold-400 hover:text-black transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/923405049439" target="_blank" class="w-9 h-9 bg-obsidian rounded-full flex items-center justify-center hover:bg-green-500 hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800/80 pt-6 text-center text-gray-500">
+            <p>&copy; 2026 Ronaldo Sports PK. Built for Champions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Official WhatsApp Number Integration
+        const TARGET_WHATSAPP_NUMBER = "923405049439";
+
+        // Store Product Catalog Data
+        const products = [
+            {
+                id: 1,
+                name: "Portugal CR7 Home Kit 2026",
+                category: "jerseys",
+                price: 2499,
+                originalPrice: 3499,
+                image: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?auto=format&fit=crop&w=600&q=80",
+                desc: "Official Master Quality Portugal National Team Jersey with CR7 #7 back printing capability. Breathable dri-fit fabric."
+            },
+            {
+                id: 2,
+                name: "Al-Nassr CR7 Special Gold Edition",
+                category: "cr7specials",
+                price: 2699,
+                originalPrice: 3799,
+                image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=600&q=80",
+                desc: "High quality Al-Nassr Yellow & Navy kit with gold emblem details. Ultra-light mesh structure."
+            },
+            {
+                id: 3,
+                name: "Real Madrid Vintage CR7 #7 Kit",
+                category: "cr7specials",
+                price: 2799,
+                originalPrice: 3999,
+                image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80",
+                desc: "Classic Iconic Real Madrid UEFA Champions League Edition jersey. Premium embroidery badges."
+            },
+            {
+                id: 4,
+                name: "CR7 Mercurial Vapor Turf Cleats",
+                category: "shoes",
+                price: 5499,
+                originalPrice: 7499,
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+                desc: "High performance synthetic leather turf football boots designed for explosive acceleration and pitch grip."
+            },
+            {
+                id: 5,
+                name: "CR7 Strike Match Football (Size 5)",
+                category: "accessories",
+                price: 1999,
+                originalPrice: 2799,
+                image: "https://images.unsplash.com/photo-1614632537190-23e4146777db?auto=format&fit=crop&w=600&q=80",
+                desc: "Textured casing for superior touch and control on field. Reinforced high durability inner rubber bladder."
+            },
+            {
+                id: 6,
+                name: "CR7 Stealth Fitness Tracksuit",
+                category: "tracksuits",
+                price: 4999,
+                originalPrice: 6999,
+                image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80",
+                desc: "Sleek dark navy athletic tracksuit jacket & trousers combo with slim-fit design and zippered pockets."
+            },
+            {
+                id: 7,
+                name: "Manchester United CR7 Retro Kit",
+                category: "jerseys",
+                price: 2599,
+                originalPrice: 3599,
+                image: "https://images.unsplash.com/photo-1580087433295-ab2600c1030e?auto=format&fit=crop&w=600&q=80",
+                desc: "Red Devils classic #7 jersey with premium moisture wicking ventilation."
+            },
+            {
+                id: 8,
+                name: "Pro Shin Guards + Grip Socks Set",
+                category: "accessories",
+                price: 1299,
+                originalPrice: 1899,
+                image: "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=600&q=80",
+                desc: "Impact resistant ergonomic shin pads paired with non-slip high grip football compression socks."
+            }
+        ];
+
+        // Global State
+        let cart = [];
+        let activeCategory = 'all';
+        let selectedModalProduct = null;
+        let selectedModalSize = 'M';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+            updateCartBadge();
+            startCountdown();
+        });
+
+        // Flash Sale Countdown Logic
+        function startCountdown() {
+            let h = 8, m = 42, s = 19;
+            setInterval(() => {
+                s--;
+                if (s < 0) { s = 59; m--; }
+                if (m < 0) { m = 59; h--; }
+                if (h < 0) { h = 12; }
+                document.getElementById('hours').innerText = h < 10 ? '0' + h : h;
+                document.getElementById('minutes').innerText = m < 10 ? '0' + m : m;
+                document.getElementById('seconds').innerText = s < 10 ? '0' + s : s;
+            }, 1000);
+        }
+
+        // Render Product Cards
+        function renderProducts(items) {
+            const grid = document.getElementById('productGrid');
+            const noResults = document.getElementById('noResults');
+            const countEl = document.getElementById('productCount');
+            
+            grid.innerHTML = '';
+            countEl.innerText = items.length;
+
+            if (items.length === 0) {
+                noResults.classList.remove('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+            }
+
+            items.forEach(product => {
+                const card = document.createElement('div');
+                card.className = "glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col justify-between group";
+                
+                card.innerHTML = `
+                    <div class="relative bg-black/50 overflow-hidden cursor-pointer" onclick="openProductModal(${product.id})">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-56 object-cover object-center group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-gold-400 text-[10px] font-bold uppercase px-2.5 py-1 rounded-md border border-gold-400/30">
+                            ${product.category}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded">
+                            SALE
+                        </span>
+                    </div>
+
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-white font-bold text-base hover:text-gold-400 cursor-pointer transition" onclick="openProductModal(${product.id})">
+                                ${product.name}
+                            </h3>
+                            <p class="text-gray-400 text-xs mt-1 line-clamp-2">${product.desc}</p>
+                        </div>
+
+                        <div class="pt-3 border-t border-gray-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-gray-500 line-through">Rs. ${product.originalPrice.toLocaleString()}</span>
+                                <p class="text-lg font-black text-gold-400">Rs. ${product.price.toLocaleString()}</p>
+                            </div>
+                            <button onclick="quickAddToCart(${product.id})" class="bg-darkNavy hover:bg-gold-400 hover:text-black text-gray-200 p-2.5 rounded-xl border border-gray-700 transition">
+                                <i class="fa-solid fa-cart-plus text-base"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Category Filter
+        function filterCategory(cat) {
+            activeCategory = cat;
+            const buttons = document.querySelectorAll('.cat-btn');
+            
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-gold-400', 'text-black', 'active');
+                btn.classList.add('bg-darkNavy', 'text-gray-300');
+            });
+
+            event.currentTarget.classList.remove('bg-darkNavy', 'text-gray-300');
+            event.currentTarget.classList.add('bg-gold-400', 'text-black', 'active');
+
+            filterAndSearch();
+        }
+
+        // Search Handlers
+        function handleSearch() {
+            filterAndSearch();
+        }
+
+        function handleMobileSearch() {
+            const query = document.getElementById('mobileSearchInput').value.toLowerCase();
+            document.getElementById('searchInput').value = query;
+            filterAndSearch();
+        }
+
+        function filterAndSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = products.filter(p => {
+                const matchesCategory = activeCategory === 'all' || p.category === activeCategory;
+                const matchesQuery = p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query);
+                return matchesCategory && matchesQuery;
+            });
+            renderProducts(filtered);
+        }
+
+        // Modal Controls
+        function openProductModal(id) {
+            selectedModalProduct = products.find(p => p.id === id);
+            selectedModalSize = 'M';
+
+            document.getElementById('modalProductName').innerText = selectedModalProduct.name;
+            document.getElementById('modalProductCategory').innerText = selectedModalProduct.category;
+            document.getElementById('modalProductPrice').innerText = `Rs. ${selectedModalProduct.price.toLocaleString()}`;
+            document.getElementById('modalProductDesc').innerText = selectedModalProduct.desc;
+            document.getElementById('modalProductImage').src = selectedModalProduct.image;
+
+            selectSize('M');
+            document.getElementById('productModal').classList.remove('hidden');
+        }
+
+        function closeProductModal() {
+            document.getElementById('productModal').classList.add('hidden');
+        }
+
+        function selectSize(size) {
+            selectedModalSize = size;
+            const btns = document.querySelectorAll('.size-btn');
+            btns.forEach(btn => {
+                if (btn.innerText === size) {
+                    btn.className = "size-btn active px-3 py-1.5 border border-gold-400 text-xs font-bold rounded-lg text-gold-400 bg-gold-400/10";
+                } else {
+                    btn.className = "size-btn px-3 py-1.5 border border-gray-700 text-xs font-bold rounded-lg text-gray-300 hover:border-gold-400";
+                }
+            });
+        }
+
+        // Cart Actions
+        function quickAddToCart(id) {
+            const prod = products.find(p => p.id === id);
+            addToCart(prod, 'M');
+        }
+
+        function addModalItemToCart() {
+            if (selectedModalProduct) {
+                addToCart(selectedModalProduct, selectedModalSize);
+                closeProductModal();
+            }
+        }
+
+        function addToCart(product, size) {
+            const existingIndex = cart.findIndex(item => item.id === product.id && item.size === size);
+            if (existingIndex > -1) {
+                cart[existingIndex].qty += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    size: size,
+                    qty: 1
+                });
+            }
+            updateCartBadge();
+            renderCartItems();
+            showToast(`Added ${product.name} (${size}) to cart`);
+        }
+
+        function updateCartBadge() {
+            const totalQty = cart.reduce((acc, item) => acc + item.qty, 0);
+            document.getElementById('cartCountBadge').innerText = totalQty;
+        }
+
+        function renderCartItems() {
+            const container = document.getElementById('cartItemsContainer');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-gray-500">
+                        <i class="fa-solid fa-basket-shopping text-4xl mb-3"></i>
+                        <p class="text-xs">Your shopping cart is currently empty.</p>
+                    </div>
+                `;
+                document.getElementById('cartSubtotal').innerText = "Rs. 0";
+                return;
+            }
+
+            let subtotal = 0;
+
+            cart.forEach((item, index) => {
+                subtotal += item.price * item.qty;
+                const itemEl = document.createElement('div');
+                itemEl.className = "bg-obsidian rounded-xl p-3 border border-gray-800 flex items-center space-x-3";
+                itemEl.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="w-14 h-14 object-cover rounded-lg">
+                    <div class="flex-1">
+                        <h4 class="text-white text-xs font-bold">${item.name}</h4>
+                        <span class="text-[10px] text-gold-400 font-semibold bg-gold-400/10 px-2 py-0.5 rounded">Size: ${item.size}</span>
+                        <p class="text-gold-400 text-xs font-extrabold mt-1">Rs. ${(item.price * item.qty).toLocaleString()}</p>
+                    </div>
+                    <div class="flex items-center space-x-1.5 bg-darkNavy rounded-lg p-1 border border-gray-700">
+                        <button onclick="changeQty(${index}, -1)" class="w-5 h-5 text-xs text-gray-300 hover:text-white font-bold">-</button>
+                        <span class="text-xs text-white font-bold px-1">${item.qty}</span>
+                        <button onclick="changeQty(${index}, 1)" class="w-5 h-5 text-xs text-gray-300 hover:text-white font-bold">+</button>
+                    </div>
+                    <button onclick="removeCartItem(${index})" class="text-gray-500 hover:text-red-500 p-1">
+                        <i class="fa-solid fa-trash-can text-xs"></i>
+                    </button>
+                `;
+                container.appendChild(itemEl);
+            });
+
+            document.getElementById('cartSubtotal').innerText = `Rs. ${subtotal.toLocaleString()}`;
+        }
+
+        function changeQty(index, change) {
+            cart[index].qty += change;
+            if (cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            updateCartBadge();
+            renderCartItems();
+        }
+
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            updateCartBadge();
+            renderCartItems();
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cartDrawer');
+            renderCartItems();
+            drawer.classList.toggle('hidden');
+        }
+
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                showToast("Cart is empty! Select products first.");
+                return;
+            }
+            toggleCartDrawer();
+            document.getElementById('checkoutModal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkoutModal').classList.add('hidden');
+        }
+
+        // Direct WhatsApp Modal Buy
+        function directWhatsAppModalOrder() {
+            if (!selectedModalProduct) return;
+            
+            const message = `*NEW DIRECT ORDER - RONALDO SPORTS PK*%0A` +
+                            `----------------------------------%0A` +
+                            `*Item:* ${selectedModalProduct.name}%0A` +
+                            `*Size:* ${selectedModalSize}%0A` +
+                            `*Price:* Rs. ${selectedModalProduct.price.toLocaleString()}%0A` +
+                            `----------------------------------%0A` +
+                            `Please confirm order and delivery time!`;
+            
+            const url = `https://wa.me/${TARGET_WHATSAPP_NUMBER}?text=${message}`;
+            window.open(url, '_blank');
+        }
+
+        // Formatted WhatsApp Full Cart Order
+        function submitWhatsAppOrder(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const city = document.getElementById('custCity').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+
+            let total = 0;
+            let orderSummary = "";
+
+            cart.forEach((item, i) => {
+                const itemTotal = item.price * item.qty;
+                total += itemTotal;
+                orderSummary += `${i + 1}. *${item.name}*%0A   - Size: ${item.size}%0A   - Qty: ${item.qty}%0A   - Price: Rs. ${itemTotal.toLocaleString()}%0A`;
+            });
+
+            const message = `*NEW WEBSITE ORDER - RONALDO SPORTS PK*%0A` +
+                            `==================================%0A` +
+                            `*CUSTOMER DETAILS:*%0A` +
+                            `👤 *Name:* ${name}%0A` +
+                            `📞 *Phone:* ${phone}%0A` +
+                            `🏙️ *City:* ${city}%0A` +
+                            `🏠 *Address:* ${address}%0A` +
+                            `==================================%0A` +
+                            `*ORDER ITEMS:*%0A${orderSummary}` +
+                            `==================================%0A` +
+                            `💰 *TOTAL AMOUNT:* Rs. ${total.toLocaleString()}%0A` +
+                            `🚚 *Payment Method:* Cash on Delivery (COD)%0A` +
+                            `==================================%0A` +
+                            `Please confirm my order. Thank you!`;
+
+            const whatsappUrl = `https://wa.me/${TARGET_WHATSAPP_NUMBER}?text=${message}`;
+            
+            cart = [];
+            updateCartBadge();
+            closeCheckoutModal();
+
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastMessage').innerText = msg;
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
